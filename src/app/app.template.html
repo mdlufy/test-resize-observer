@@ -1,0 +1,12 @@
+<tui-badged-content>
+  @if (isShown$ | async) {
+  <tui-icon
+    appearance="primary"
+    icon="@tui.star"
+    size="l"
+    tuiBadge
+    tuiSlot="top"
+  />
+  }
+  <tui-avatar size="l" src="@tui.user" [round]="false" />
+</tui-badged-content>
